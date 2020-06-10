@@ -16,4 +16,8 @@ export class PlacesPage implements OnInit {
     this.places = this.placeService.getPlaces();
   }
 
+  ionViewWillEnter(){
+   this.places = this.placeService.getPlaces();
+  }
+
 }
